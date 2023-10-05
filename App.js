@@ -1,8 +1,8 @@
 // creating h1 tag to add this inside div tag
 const heading= React.createElement(
-    'h1',
+    'div',
     { id : "heading" },
-    "Hello World from React !!"
+    React.createElement("h2",{id: "nested-element-1"},"Nested Elements - 1")
     );
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(heading)
